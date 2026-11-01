@@ -34,6 +34,14 @@ http://127.0.0.1:25500/sub?target=clash&url=<URL编码后的机场订阅>&config
 
 把生成后的完整链接导入 Clash / Mihomo / Clash Verge Rev 即可。
 
+本模板已经编码好的 `config` 参数：
+
+```text
+config=https%3A%2F%2Fraw.githubusercontent.com%2Flincesling%2Fclash-routing-rules%2Fmain%2Fclash-routing.ini
+```
+
+只替换 `url=<URL编码后的机场订阅>` 即可。机场订阅含访问凭据，建议使用自己的 Subconverter，不建议提交给来路不明的公共转换服务。
+
 本模板的 Raw 地址：
 
 ```text
