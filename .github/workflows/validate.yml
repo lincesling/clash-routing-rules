@@ -5,12 +5,16 @@ on:
   push:
     paths:
       - "clash-routing.ini"
+      - "shadowrocket-routing.conf"
       - "scripts/validate_rules.py"
+      - "scripts/validate_shadowrocket_rules.py"
       - ".github/workflows/validate.yml"
   pull_request:
     paths:
       - "clash-routing.ini"
+      - "shadowrocket-routing.conf"
       - "scripts/validate_rules.py"
+      - "scripts/validate_shadowrocket_rules.py"
       - ".github/workflows/validate.yml"
 
 permissions:
@@ -26,3 +30,5 @@ jobs:
           python-version: "3.12"
       - name: Validate template
         run: python scripts/validate_rules.py
+      - name: Validate Shadowrocket configuration
+        run: python scripts/validate_shadowrocket_rules.py

@@ -10,6 +10,12 @@ clash-routing.ini
 
 它负责规则顺序、策略组、节点地区筛选和测速参数；机场节点仍来自你自己的订阅。
 
+Shadowrocket 通用配置：
+
+```text
+shadowrocket-routing.conf
+```
+
 ## 已经整理的内容
 
 - 删除无效的 `GEOIP,应用名` 写法，应用域名统一交给 `GEOSITE`。
@@ -41,6 +47,21 @@ config=https%3A%2F%2Fraw.githubusercontent.com%2Flincesling%2Fclash-routing-rule
 ```
 
 只替换 `url=<URL编码后的机场订阅>` 即可。机场订阅含访问凭据，建议使用自己的 Subconverter，不建议提交给来路不明的公共转换服务。
+
+## Shadowrocket 导入
+
+Raw 地址：
+
+```text
+https://raw.githubusercontent.com/lincesling/clash-routing-rules/main/shadowrocket-routing.conf
+```
+
+1. 先在 Shadowrocket 中添加机场订阅或节点。
+2. 打开「配置」，点右上角「+」。
+3. 粘贴上面的 Raw 地址并下载。
+4. 选中 `shadowrocket-routing.conf`，开启 Shadowrocket。
+
+该配置不包含节点，也不要求节点名称匹配特定地区。规则中的 `PROXY` 会自动使用 Shadowrocket 当前选中的节点；国内域名和 IP 走 `DIRECT`，未命中流量走 `PROXY`。
 
 本模板的 Raw 地址：
 
