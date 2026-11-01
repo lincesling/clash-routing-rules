@@ -37,10 +37,10 @@ http://127.0.0.1:25500/sub?target=clash&url=<URL编码后的机场订阅>&config
 本模板的 Raw 地址：
 
 ```text
-https://raw.githubusercontent.com/OWNER/REPOSITORY/main/clash-routing.ini
+https://raw.githubusercontent.com/lincesling/clash-routing-rules/main/clash-routing.ini
 ```
 
-将 `OWNER` 和 `REPOSITORY` 替换为仓库实际地址。
+仓库地址：<https://github.com/lincesling/clash-routing-rules>
 
 ## 策略组说明
 
